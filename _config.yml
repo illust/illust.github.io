@@ -1,5 +1,5 @@
 # Site Info
-title: Sven Illusty
+title: Sven Illust
 tagline: 'A Jekyll theme based on Lanyon'
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: /illust.github.io
@@ -25,15 +25,15 @@ version: 1.0.0
 # About/contact
 author:
   name: Codinfox
-  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  description: A passionate <strong>developer and researcher</strong>, like study and fitness.
+  gravatar: 48c7c64852f02d1033c0d6a662819204 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/lizhihao
+    # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/illust
     # facebook:  <hide>
-    twitter:   https://twitter.com/Li_Zhihao
-    weibo:     http://weibo.com/41173780
-    email:     http://www.google.com/recaptcha/mailhide/d?k=01I3lZFiZYng9N3QxYEtsDaQ==&c=31wAnZkuKqcG0ATAqJN8Z3ln5kkYLA9TwkGc-IbygpM=
+    twitter:   https://twitter.com/thor_wong
+    weibo:     http://weibo.com/5504420122
+    email:     http://www.google.com/recaptcha/mailhide/d?k=01WML372iqzGGiHq5GUVagkQ==&c=HbWXs8zBQljgaOOVU-AImH4s24ZNe_wFQ0elZKjhwz4=
 
 # Navigation (2nd level links supported)
 nav:
@@ -46,7 +46,7 @@ nav:
   About:          
     - '/about/'
   Github Project: 
-    - 'http://codinfox.github.io/'
+    - 'http://illust.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
