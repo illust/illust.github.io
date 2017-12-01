@@ -1,8 +1,14 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: 我的Blog
+---
 
-<body>
-Hello world,my name is Sven Wong.
-</body>
+<h2>{{ page.title }}</h2>
 
-</html>
+<p>最新文章</p>
+
+<ul>
+    {% for post in site.posts %}
+      <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
