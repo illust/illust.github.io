@@ -1,8 +1,3 @@
----
-layout: post
-title: numpy_exercise
----
-
 This notebook is used to do some exercises about numpy basic knowledge
 you can see the details in https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
 
@@ -130,7 +125,1406 @@ b
 
 
 
-# Summarize ways to create array
+
+```python
+c = np.array([[1,2],[3,4]],dtype=complex)
+```
+
+
+```python
+c
+```
+
+
+
+
+    array([[ 1.+0.j,  2.+0.j],
+           [ 3.+0.j,  4.+0.j]])
+
+
+
+
+```python
+np.zeros((3,4))
+```
+
+
+
+
+    array([[ 0.,  0.,  0.,  0.],
+           [ 0.,  0.,  0.,  0.],
+           [ 0.,  0.,  0.,  0.]])
+
+
+
+
+```python
+np.ones((2,3,4),dtype=np.int16)
+```
+
+
+
+
+    array([[[1, 1, 1, 1],
+            [1, 1, 1, 1],
+            [1, 1, 1, 1]],
+    
+           [[1, 1, 1, 1],
+            [1, 1, 1, 1],
+            [1, 1, 1, 1]]], dtype=int16)
+
+
+
+
+```python
+np.empty((2,3))
+```
+
+
+
+
+    array([[ 0.,  0.,  0.],
+           [ 0.,  0.,  0.]])
+
+
+
+
+```python
+# arange(start,end,steps)
+np.arange(10,30,5)
+```
+
+
+
+
+    array([10, 15, 20, 25])
+
+
+
+
+```python
+np.arange(10)
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+
+
+
+```python
+from numpy import pi
+```
+
+
+```python
+# linspace(start,end,number of elements)
+np.linspace(0,2,9)
+```
+
+
+
+
+    array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ,  1.25,  1.5 ,  1.75,  2.  ])
+
+
+
+
+```python
+x = np.linspace(0,2*pi,100)
+```
+
+
+```python
+f = np.sin(x)
+```
+
+
+```python
+f
+```
+
+
+
+
+    array([  0.00000000e+00,   6.34239197e-02,   1.26592454e-01,
+             1.89251244e-01,   2.51147987e-01,   3.12033446e-01,
+             3.71662456e-01,   4.29794912e-01,   4.86196736e-01,
+             5.40640817e-01,   5.92907929e-01,   6.42787610e-01,
+             6.90079011e-01,   7.34591709e-01,   7.76146464e-01,
+             8.14575952e-01,   8.49725430e-01,   8.81453363e-01,
+             9.09631995e-01,   9.34147860e-01,   9.54902241e-01,
+             9.71811568e-01,   9.84807753e-01,   9.93838464e-01,
+             9.98867339e-01,   9.99874128e-01,   9.96854776e-01,
+             9.89821442e-01,   9.78802446e-01,   9.63842159e-01,
+             9.45000819e-01,   9.22354294e-01,   8.95993774e-01,
+             8.66025404e-01,   8.32569855e-01,   7.95761841e-01,
+             7.55749574e-01,   7.12694171e-01,   6.66769001e-01,
+             6.18158986e-01,   5.67059864e-01,   5.13677392e-01,
+             4.58226522e-01,   4.00930535e-01,   3.42020143e-01,
+             2.81732557e-01,   2.20310533e-01,   1.58001396e-01,
+             9.50560433e-02,   3.17279335e-02,  -3.17279335e-02,
+            -9.50560433e-02,  -1.58001396e-01,  -2.20310533e-01,
+            -2.81732557e-01,  -3.42020143e-01,  -4.00930535e-01,
+            -4.58226522e-01,  -5.13677392e-01,  -5.67059864e-01,
+            -6.18158986e-01,  -6.66769001e-01,  -7.12694171e-01,
+            -7.55749574e-01,  -7.95761841e-01,  -8.32569855e-01,
+            -8.66025404e-01,  -8.95993774e-01,  -9.22354294e-01,
+            -9.45000819e-01,  -9.63842159e-01,  -9.78802446e-01,
+            -9.89821442e-01,  -9.96854776e-01,  -9.99874128e-01,
+            -9.98867339e-01,  -9.93838464e-01,  -9.84807753e-01,
+            -9.71811568e-01,  -9.54902241e-01,  -9.34147860e-01,
+            -9.09631995e-01,  -8.81453363e-01,  -8.49725430e-01,
+            -8.14575952e-01,  -7.76146464e-01,  -7.34591709e-01,
+            -6.90079011e-01,  -6.42787610e-01,  -5.92907929e-01,
+            -5.40640817e-01,  -4.86196736e-01,  -4.29794912e-01,
+            -3.71662456e-01,  -3.12033446e-01,  -2.51147987e-01,
+            -1.89251244e-01,  -1.26592454e-01,  -6.34239197e-02,
+            -2.44929360e-16])
+
+
+
+
+```python
+a = np.arange(6)
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5])
+
+
+
+
+```python
+print a
+```
+
+    [0 1 2 3 4 5]
+    
+
+
+```python
+b = np.arange(12).reshape(4,3)
+```
+
+
+```python
+b
+```
+
+
+
+
+    array([[ 0,  1,  2],
+           [ 3,  4,  5],
+           [ 6,  7,  8],
+           [ 9, 10, 11]])
+
+
+
+
+```python
+print b
+```
+
+    [[ 0  1  2]
+     [ 3  4  5]
+     [ 6  7  8]
+     [ 9 10 11]]
+    
+
+# Basic Operations 
+
+
+```python
+a = np.array([20,30,40,50])
+```
+
+
+```python
+b = np.arange(4)
+```
+
+
+```python
+c = a - b
+```
+
+
+```python
+c
+```
+
+
+
+
+    array([20, 29, 38, 47])
+
+
+
+
+```python
+b**2
+```
+
+
+
+
+    array([0, 1, 4, 9])
+
+
+
+
+```python
+10*np.sin(a)
+```
+
+
+
+
+    array([ 9.12945251, -9.88031624,  7.4511316 , -2.62374854])
+
+
+
+
+```python
+a < 35
+```
+
+
+
+
+    array([ True,  True, False, False], dtype=bool)
+
+
+
+
+```python
+A = np.array([[1,1],[0,1]])
+```
+
+
+```python
+B = np.array([[2,0],[3,4]])
+```
+
+
+```python
+A*B # elementwise product
+```
+
+
+
+
+    array([[2, 0],
+           [0, 4]])
+
+
+
+
+```python
+A.dot(B) # matrix product
+```
+
+
+
+
+    array([[5, 4],
+           [3, 4]])
+
+
+
+
+```python
+np.dot(A,B) # another matrix product
+```
+
+
+
+
+    array([[5, 4],
+           [3, 4]])
+
+
+
+
+```python
+a = np.ones((2,3),dtype=int)
+```
+
+
+```python
+b = np.random.random((2,3))
+```
+
+
+```python
+a *= 3
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([[3, 3, 3],
+           [3, 3, 3]])
+
+
+
+
+```python
+b += a
+```
+
+
+```python
+b
+```
+
+
+
+
+    array([[ 3.93082729,  3.48996397,  3.53907778],
+           [ 3.24166054,  3.63584424,  3.12265131]])
+
+
+
+
+```python
+a += b
+```
+
+
+    ---------------------------------------------------------------------------
+
+    TypeError                                 Traceback (most recent call last)
+
+    <ipython-input-50-3054fce39e6f> in <module>()
+    ----> 1 a += b
+    
+
+    TypeError: Cannot cast ufunc add output from dtype('float64') to dtype('int32') with casting rule 'same_kind'
+
+
+
+```python
+a = np.ones(3,dtype=np.int32)
+```
+
+
+```python
+b = np.linspace(0,pi,3)
+```
+
+
+```python
+b.dtype.name
+```
+
+
+
+
+    'float64'
+
+
+
+
+```python
+c = a + b
+```
+
+
+```python
+c
+```
+
+
+
+
+    array([ 1.        ,  2.57079633,  4.14159265])
+
+
+
+
+```python
+c.dtype
+```
+
+
+
+
+    dtype('float64')
+
+
+
+
+```python
+c.dtype.name
+```
+
+
+
+
+    'float64'
+
+
+
+
+```python
+np.linspace(0,10,10)
+```
+
+
+
+
+    array([  0.        ,   1.11111111,   2.22222222,   3.33333333,
+             4.44444444,   5.55555556,   6.66666667,   7.77777778,
+             8.88888889,  10.        ])
+
+
+
+
+```python
+d = np.exp(c*1j)
+```
+
+
+```python
+d
+```
+
+
+
+
+    array([ 0.54030231+0.84147098j, -0.84147098+0.54030231j,
+           -0.54030231-0.84147098j])
+
+
+
+
+```python
+a = np.random.random((2,3))
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([[ 0.73595543,  0.74219823,  0.48179766],
+           [ 0.99173841,  0.69246558,  0.78557308]])
+
+
+
+
+```python
+a.sum()
+```
+
+
+
+
+    4.4297283890304673
+
+
+
+
+```python
+a.min()
+```
+
+
+
+
+    0.48179766423024961
+
+
+
+
+```python
+a.max()
+```
+
+
+
+
+    0.99173840530657864
+
+
+
+
+```python
+b = np.arange(12).reshape(3,4)
+```
+
+
+```python
+b
+```
+
+
+
+
+    array([[ 0,  1,  2,  3],
+           [ 4,  5,  6,  7],
+           [ 8,  9, 10, 11]])
+
+
+
+
+```python
+a.min(axis=0)    # min of each column
+```
+
+
+
+
+    array([ 0.73595543,  0.69246558,  0.48179766])
+
+
+
+
+```python
+a.min(axis=1)    # min of each row
+```
+
+
+
+
+    array([ 0.48179766,  0.69246558])
+
+
+
+
+```python
+a.ndim
+```
+
+
+
+
+    2
+
+
+
+
+```python
+b.sum(axis=0)  # sum of each colum
+```
+
+
+
+
+    array([12, 15, 18, 21])
+
+
+
+
+```python
+b.sum(axis=1) # sum of each row
+```
+
+
+
+
+    array([ 6, 22, 38])
+
+
+
+
+```python
+b.cumsum(axis=1)  # comulative sum along each row
+```
+
+
+
+
+    array([[ 0,  1,  3,  6],
+           [ 4,  9, 15, 22],
+           [ 8, 17, 27, 38]])
+
+
+
+# Universal Functions
+
+
+```python
+B = np.arange(3)
+```
+
+
+```python
+B
+```
+
+
+
+
+    array([0, 1, 2])
+
+
+
+
+```python
+np.exp(B)
+```
+
+
+
+
+    array([ 1.        ,  2.71828183,  7.3890561 ])
+
+
+
+
+```python
+np.sqrt(B)
+```
+
+
+
+
+    array([ 0.        ,  1.        ,  1.41421356])
+
+
+
+
+```python
+C = np.array([2.,-1.,4.])
+```
+
+
+```python
+np.add(B,C)
+```
+
+
+
+
+    array([ 2.,  0.,  6.])
+
+
+
+
+```python
+B + C
+```
+
+
+
+
+    array([ 2.,  0.,  6.])
+
+
+
+# Indexing,Slicing and Iterating 
+
+
+```python
+a = np.arange(10)**3
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([  0,   1,   8,  27,  64, 125, 216, 343, 512, 729])
+
+
+
+
+```python
+a[2]
+```
+
+
+
+
+    8
+
+
+
+
+```python
+a[2:5]
+```
+
+
+
+
+    array([ 8, 27, 64])
+
+
+
+
+```python
+a[:6:2] = -1000 # equivalent to a[0:6:2] = -1000; from start to position 6,exclusive, set every 2nd element to -1000
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([-1000,     1, -1000,    27, -1000,   125,   216,   343,   512,   729])
+
+
+
+
+```python
+a[::-1]
+```
+
+
+
+
+    array([  729,   512,   343,   216,   125, -1000,    27, -1000,     1, -1000])
+
+
+
+
+```python
+for i in a:
+    print i**(1/3.)
+```
+
+    nan
+    1.0
+    nan
+    3.0
+    nan
+    5.0
+    6.0
+    7.0
+    8.0
+    9.0
+    
+
+    E:\Software\Anaconda2\lib\site-packages\ipykernel_launcher.py:2: RuntimeWarning: invalid value encountered in power
+      
+    
+
+
+```python
+help(np.fromfunction)
+```
+
+    Help on function fromfunction in module numpy.core.numeric:
+    
+    fromfunction(function, shape, **kwargs)
+        Construct an array by executing a function over each coordinate.
+        
+        The resulting array therefore has a value ``fn(x, y, z)`` at
+        coordinate ``(x, y, z)``.
+        
+        Parameters
+        ----------
+        function : callable
+            The function is called with N parameters, where N is the rank of
+            `shape`.  Each parameter represents the coordinates of the array
+            varying along a specific axis.  For example, if `shape`
+            were ``(2, 2)``, then the parameters would be
+            ``array([[0, 0], [1, 1]])`` and ``array([[0, 1], [0, 1]])``
+        shape : (N,) tuple of ints
+            Shape of the output array, which also determines the shape of
+            the coordinate arrays passed to `function`.
+        dtype : data-type, optional
+            Data-type of the coordinate arrays passed to `function`.
+            By default, `dtype` is float.
+        
+        Returns
+        -------
+        fromfunction : any
+            The result of the call to `function` is passed back directly.
+            Therefore the shape of `fromfunction` is completely determined by
+            `function`.  If `function` returns a scalar value, the shape of
+            `fromfunction` would match the `shape` parameter.
+        
+        See Also
+        --------
+        indices, meshgrid
+        
+        Notes
+        -----
+        Keywords other than `dtype` are passed to `function`.
+        
+        Examples
+        --------
+        >>> np.fromfunction(lambda i, j: i == j, (3, 3), dtype=int)
+        array([[ True, False, False],
+               [False,  True, False],
+               [False, False,  True]], dtype=bool)
+        
+        >>> np.fromfunction(lambda i, j: i + j, (3, 3), dtype=int)
+        array([[0, 1, 2],
+               [1, 2, 3],
+               [2, 3, 4]])
+    
+    
+
+
+```python
+b = np.fromfunction(lambda i,j:i+j,(5,4),dtype=int)
+```
+
+
+```python
+b
+```
+
+
+
+
+    array([[0, 1, 2, 3],
+           [1, 2, 3, 4],
+           [2, 3, 4, 5],
+           [3, 4, 5, 6],
+           [4, 5, 6, 7]])
+
+
+
+
+```python
+b[2,3]
+```
+
+
+
+
+    5
+
+
+
+
+```python
+b[0:5,1]
+```
+
+
+
+
+    array([1, 2, 3, 4, 5])
+
+
+
+
+```python
+b[:,1]
+```
+
+
+
+
+    array([1, 2, 3, 4, 5])
+
+
+
+
+```python
+b[1:3,:]
+```
+
+
+
+
+    array([[1, 2, 3, 4],
+           [2, 3, 4, 5]])
+
+
+
+
+```python
+b[-1]   # the last row. Equivalent to b[-1,:]
+```
+
+
+
+
+    array([4, 5, 6, 7])
+
+
+
+
+```python
+b[:,-1]
+```
+
+
+
+
+    array([3, 4, 5, 6, 7])
+
+
+
+
+```python
+c = np.array([[[0,1,2],   # a 3D array (two stacked 2D arrays)
+              [10,12,13]],
+             [[100,101,102],
+             [110,112,113]]])
+```
+
+
+```python
+c.shape
+```
+
+
+
+
+    (2L, 2L, 3L)
+
+
+
+
+```python
+c[1]
+```
+
+
+
+
+    array([[100, 101, 102],
+           [110, 112, 113]])
+
+
+
+
+```python
+c[1,...]
+```
+
+
+
+
+    array([[100, 101, 102],
+           [110, 112, 113]])
+
+
+
+
+```python
+c[...,2]
+```
+
+
+
+
+    array([[  2,  13],
+           [102, 113]])
+
+
+
+
+```python
+c[:,:,2]
+```
+
+
+
+
+    array([[  2,  13],
+           [102, 113]])
+
+
+
+
+```python
+for row in b:
+    print row
+```
+
+    [0 1 2 3]
+    [1 2 3 4]
+    [2 3 4 5]
+    [3 4 5 6]
+    [4 5 6 7]
+    
+
+
+```python
+for row in c:
+    print row
+```
+
+    [[ 0  1  2]
+     [10 12 13]]
+    [[100 101 102]
+     [110 112 113]]
+    
+
+
+```python
+c[0]
+```
+
+
+
+
+    array([[ 0,  1,  2],
+           [10, 12, 13]])
+
+
+
+
+```python
+for element in b.flat:
+    print element
+```
+
+    0
+    1
+    2
+    3
+    1
+    2
+    3
+    4
+    2
+    3
+    4
+    5
+    3
+    4
+    5
+    6
+    4
+    5
+    6
+    7
+    
+
+# Shape Manipulation 
+## Changing the shape of an array
+
+
+```python
+a = np.floor(10*np.random.random((3,4)))
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([[ 3.,  1.,  1.,  2.],
+           [ 3.,  4.,  3.,  0.],
+           [ 7.,  6.,  4.,  1.]])
+
+
+
+
+```python
+np.ceil(10*np.random.random((3,4)))
+```
+
+
+
+
+    array([[ 10.,   4.,   8.,   3.],
+           [  1.,  10.,   7.,   1.],
+           [ 10.,   9.,   1.,   2.]])
+
+
+
+
+```python
+a.ravel()
+```
+
+
+
+
+    array([ 3.,  1.,  1.,  2.,  3.,  4.,  3.,  0.,  7.,  6.,  4.,  1.])
+
+
+
+
+```python
+a.reshape(6,2) # returns the array with a modified shape
+```
+
+
+
+
+    array([[ 3.,  1.],
+           [ 1.,  2.],
+           [ 3.,  4.],
+           [ 3.,  0.],
+           [ 7.,  6.],
+           [ 4.,  1.]])
+
+
+
+
+```python
+a.T # returns the array, transposed
+```
+
+
+
+
+    array([[ 3.,  3.,  7.],
+           [ 1.,  4.,  6.],
+           [ 1.,  3.,  4.],
+           [ 2.,  0.,  1.]])
+
+
+
+
+```python
+a.T.shape
+```
+
+
+
+
+    (4L, 3L)
+
+
+
+
+```python
+a.shape
+```
+
+
+
+
+    (3L, 4L)
+
+
+
+
+```python
+a
+```
+
+
+
+
+    array([[ 3.,  1.,  1.,  2.],
+           [ 3.,  4.,  3.,  0.],
+           [ 7.,  6.,  4.,  1.]])
+
+
+
+
+```python
+a.resize((2,6))
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([[ 3.,  1.,  1.,  2.,  3.,  4.],
+           [ 3.,  0.,  7.,  6.,  4.,  1.]])
+
+
+
+
+```python
+a.reshape(3,-1) # if a dimension is given -1 in a reshaping operation,the other dimensions are automatically  calculated
+```
+
+
+
+
+    array([[ 3.,  1.,  1.,  2.],
+           [ 3.,  4.,  3.,  0.],
+           [ 7.,  6.,  4.,  1.]])
+
+
+
+## Stacking together different arrays
+
+
+```python
+a = np.floor(10*np.random.random((2,2)))
+```
+
+
+```python
+a
+```
+
+
+
+
+    array([[ 9.,  1.],
+           [ 3.,  5.]])
+
+
+
+
+```python
+b = np.floor(10*np.random.random((2,2)))
+```
+
+
+```python
+b
+```
+
+
+
+
+    array([[ 5.,  6.],
+           [ 4.,  1.]])
+
+
+
+
+```python
+np.vstack((a,b))
+```
+
+
+
+
+    array([[ 9.,  1.],
+           [ 3.,  5.],
+           [ 5.,  6.],
+           [ 4.,  1.]])
+
+
+
+
+```python
+np.hstack((a,b))
+```
+
+
+
+
+    array([[ 9.,  1.,  5.,  6.],
+           [ 3.,  5.,  4.,  1.]])
+
+
+
+
+```python
+from numpy import newaxis
+```
+
+
+```python
+np.column_stack((a,b)) # with 2D arrays
+```
+
+
+
+
+    array([[ 9.,  1.,  5.,  6.],
+           [ 3.,  5.,  4.,  1.]])
+
+
+
+
+```python
+a = np.array([4.,2.])
+```
+
+
+```python
+b = np.array([3.,8.])
+```
+
+
+```python
+a[:,newaxis] # This allows to have a 2D columns vector
+```
+
+
+
+
+    array([[ 4.],
+           [ 2.]])
+
+
+
+
+```python
+np.column_stack((a[:,newaxis],b[:,newaxis]))
+```
+
+
+
+
+    array([[ 4.,  3.],
+           [ 2.,  8.]])
+
+
+
+
+```python
+np.vstack((a[:,newaxis],b[:,newaxis]))
+```
+
+
+
+
+    array([[ 4.],
+           [ 2.],
+           [ 3.],
+           [ 8.]])
+
+
+
+
+```python
+np.r_[1:5,0,4]
+```
+
+
+
+
+    array([1, 2, 3, 4, 0, 4])
+
+
+
+
+```python
+np.c_[[[1,2,3]],0,0,[[4,5,6]]]
+```
+
+
+
+
+    array([[1, 2, 3, 0, 0, 4, 5, 6]])
+
+
 
 
 ```python
