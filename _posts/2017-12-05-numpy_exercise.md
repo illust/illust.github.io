@@ -1,6 +1,6 @@
 ---
-layout:post
-title:numpy_exercise
+layout: post
+title: numpy_exercise
 ---
 
 This notebook is used to do some exercises about numpy basic knowledge
