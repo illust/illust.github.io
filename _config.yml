@@ -1,6 +1,6 @@
 # Site Info
-title: Sven Illust
-tagline: 'A Jekyll theme based on Lanyon'
+title: Sven Wong
+tagline: 'Individual Share Space'
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: ''
 url: http://illust.github.io
@@ -15,7 +15,7 @@ kramdown:
 excerpt_separator: "<!-- more -->"
 sass:
   style: compressed
-  sass_dir: _scss    
+  sass_dir: _scss
 paginate: 5
 paginate_path: '/blog/page:num'
 permalink: pretty
@@ -24,28 +24,28 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: Codinfox
+  name: Sven Wong
   description: A passionate <strong>developer and researcher</strong>, like study and fitness.
   gravatar: 48c7c64852f02d1033c0d6a662819204 # md5 hash of your email address
   contact:
-    # linkedin:  https://www.linkedin.com/in/lizhihao
+    # linkedin:
     github:    https://github.com/illust
-    # facebook:  <hide>
+    # facebook:
     twitter:   https://twitter.com/thor_wong
-    weibo:     http://weibo.com/5504420122
+    weibo:     http://weibo.com/6329654485
     email:     http://www.google.com/recaptcha/mailhide/d?k=01WML372iqzGGiHq5GUVagkQ==&c=HbWXs8zBQljgaOOVU-AImH4s24ZNe_wFQ0elZKjhwz4=
 
 # Navigation (2nd level links supported)
 nav:
-  Home:           
+  Home:
     - '/'
-  Blog:           
+  Blog:
     - '/blog/'
     - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
-  About:          
+  About:
     - '/about/'
-  Github Project: 
+  Github Project:
     - 'http://illust.github.io/'
 
 # Where are tags and categories displayed
@@ -59,5 +59,5 @@ hero:
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
+disqus_short_name: 'sven' # leave blank if you don't want disqus
 

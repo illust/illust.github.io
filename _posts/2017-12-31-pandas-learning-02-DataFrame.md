@@ -1,3 +1,9 @@
+---
+layout: post
+title: Pandas学习笔记02
+categories: [blog]
+excerpt: Sunny Day!
+---
 
 # Pandas学习笔记02
 
@@ -24,7 +30,7 @@ print df
     Empty DataFrame
     Columns: []
     Index: []
-    
+
 
 ### 4. 从列表创建一个DataFrame
 
@@ -42,7 +48,7 @@ print df
     2  3
     3  4
     4  5
-    
+
 
 
 ```python
@@ -57,7 +63,7 @@ print df
     0    Alex   10
     1     Bob   12
     2  Clarke   13
-    
+
 
 ### 5. 从ndarrays/列表字典创建一个DataFrame
 
@@ -75,7 +81,7 @@ print df
     1   34   Jack
     2   29  Steve
     3   42  Ricky
-    
+
 
 ### 6. 从字典列表创建一个DataFrame
 字典关键字默认作为列名
@@ -92,7 +98,7 @@ print df
             a   b     c
     first   1   2   NaN
     second  5  10  20.0
-    
+
 
 
 ```python
@@ -115,7 +121,7 @@ print df2
             a  b1
     first   1 NaN
     second  5 NaN
-    
+
 
 ### 7. 从Series字典创建一个DataFrame
 
@@ -133,7 +139,7 @@ print df
     b  2.0    2
     c  3.0    3
     d  NaN    4
-    
+
 
 ### 8. 列选择
 现在开始通过一些实例了解列选择，添加以及删除
@@ -153,7 +159,7 @@ print df['one']
     c    3.0
     d    NaN
     Name: one, dtype: float64
-    
+
 
 ### 9. 列添加
 
@@ -187,7 +193,7 @@ print df
     b  2.0    2   20.0  22.0
     c  3.0    3   30.0  33.0
     d  NaN    4    NaN   NaN
-    
+
 
 ### 10. 列删除
 
@@ -230,7 +236,7 @@ print df
     b   20.0
     c   30.0
     d    NaN
-    
+
 
 ### 11. 行选择，添加和删除
 能够通过传递行标签到loc函数选择行
@@ -238,7 +244,7 @@ print df
 
 ```python
 import pandas as pd
-d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']), 
+d = {'one' : pd.Series([1, 2, 3], index=['a', 'b', 'c']),
      'two' : pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])}
 df = pd.DataFrame(d)
 print df.loc['b']
@@ -247,7 +253,7 @@ print df.loc['b']
     one    2.0
     two    2.0
     Name: b, dtype: float64
-    
+
 
 可以通过将整数位置传递给iloc函数来选择行
 
@@ -264,7 +270,7 @@ print df.iloc[2]
     one    3.0
     two    3.0
     Name: c, dtype: float64
-    
+
 
 行切片
 
@@ -281,7 +287,7 @@ print df[2:4]
        one  two
     c  3.0    3
     d  NaN    4
-    
+
 
 添加行
 
@@ -300,7 +306,7 @@ print df
     1  3  4
     0  5  6
     1  7  8
-    
+
 
 删除行
 
@@ -320,18 +326,18 @@ print df
 
        a  b
     0  1  2
-    1  3  4 
-    
+    1  3  4
+
        a  b
     0  1  2
     1  3  4
     0  5  6
-    1  7  8 
-    
+    1  7  8
+
        a  b
     1  3  4
     1  7  8
-    
+
 
 
 ```python

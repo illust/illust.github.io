@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: 描述性统计
+categories: [travel]
+excerpt: What text editor to use? Sass or plain old CSS? What on earth is Compass? Command line? I'm not touching that. Sound like you? Welcome, I was once like you and this is the guide I wish someone had given me.
+---
 ## 描述性统计
 
 ### 1. sum(),mean(),std(),...
@@ -38,16 +43,16 @@ print df.std()
     9     34.80
     10    55.10
     11    49.65
-    dtype: float64 
-    
+    dtype: float64
+
     Age       31.833333
     Rating     3.743333
-    dtype: float64 
-    
+    dtype: float64
+
     Age       9.232682
     Rating    0.661628
     dtype: float64
-    
+
 
 ### 2. 函数及描述汇总
 
@@ -98,8 +103,8 @@ print df.describe()
     8    40   David    2.98
     9    30  Gasper    4.80
     10   51  Betina    4.10
-    11   46  Andres    3.65 
-    
+    11   46  Andres    3.65
+
                  Age     Rating
     count  12.000000  12.000000
     mean   31.833333   3.743333
@@ -109,7 +114,7 @@ print df.describe()
     50%    29.500000   3.790000
     75%    35.500000   4.132500
     max    51.000000   4.800000
-    
+
 
 
 ```python

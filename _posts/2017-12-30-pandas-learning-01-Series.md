@@ -1,3 +1,9 @@
+---
+layout: post
+title: Pandas学习笔记01
+categories: [blog]
+excerpt: 你好世界
+---
 
 ## Pandas学习笔记01
 #### ——— Pandas即panel data的缩写
@@ -24,7 +30,7 @@ print s
 ```
 
     Series([], dtype: float64)
-    
+
 
 #### 2. 从ndarray创建一个Series
 
@@ -43,7 +49,7 @@ print s
     2    c
     3    d
     dtype: object
-    
+
 
 
 ```python
@@ -61,7 +67,7 @@ print s
     102    c
     103    d
     dtype: object
-    
+
 
 #### 3. 从字典创建一个Series
 
@@ -79,7 +85,7 @@ print s
     b    1.0
     c    2.0
     dtype: float64
-    
+
 
 
 ```python
@@ -97,7 +103,7 @@ print s
     d    NaN
     a    0.0
     dtype: float64
-    
+
 
 #### 4. 从标量创建一个Series
 
@@ -115,7 +121,7 @@ print s
     2    5
     3    5
     dtype: int64
-    
+
 
 #### 5. 按位从Series访问数据
 
@@ -128,7 +134,7 @@ print s[0]
 ```
 
     1
-    
+
 
 
 ```python
@@ -146,13 +152,13 @@ print s[-3:]
     a    1
     b    2
     c    3
-    dtype: int64 
-    
+    dtype: int64
+
     c    3
     d    4
     e    5
     dtype: int64
-    
+
 
 #### 6. 使用标签检索数据（索引）
 
@@ -167,7 +173,7 @@ print s['a']
 ```
 
     1
-    
+
 
 
 ```python
@@ -182,7 +188,7 @@ print s[['a','c','d']]
     c    3
     d    4
     dtype: int64
-    
+
 
 
 ```python
@@ -201,15 +207,15 @@ print s['f']
           2 import pandas as pd
           3 s = pd.Series([1,2,3,4,5],index=['a','b','c','d','e'])
     ----> 4 print s['f']
-    
+
 
     C:\Users\wanghao03\AppData\Local\Continuum\Anaconda2\lib\site-packages\pandas\core\series.pyc in __getitem__(self, key)
         558     def __getitem__(self, key):
         559         try:
     --> 560             result = self.index.get_value(self, key)
-        561 
+        561
         562             if not lib.isscalar(result):
-    
+
 
     C:\Users\wanghao03\AppData\Local\Continuum\Anaconda2\lib\site-packages\pandas\indexes\base.pyc in get_value(self, series, key)
        1923                     raise InvalidIndexError(key)
@@ -217,7 +223,7 @@ print s['f']
     -> 1925                     raise e1
        1926             except Exception:  # pragma: no cover
        1927                 raise e1
-    
+
 
     KeyError: 'f'
 

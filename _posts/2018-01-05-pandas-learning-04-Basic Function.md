@@ -1,3 +1,9 @@
+---
+layout: post
+title: Pandas学习笔记04
+categories: [travel]
+excerpt: 遇见离殇
+---
 
 ## pandas学习笔记04
 
@@ -30,7 +36,7 @@ print s
     2   -0.342121
     3    1.177446
     dtype: float64
-    
+
 
 ##### axes
 
@@ -46,7 +52,7 @@ print s.axes
 
     The axes are:
     [RangeIndex(start=0, stop=4, step=1)]
-    
+
 
 ##### empty
 
@@ -62,7 +68,7 @@ print s.empty
 
     Is the Object empty?
     False
-    
+
 
 ##### ndim
 
@@ -85,7 +91,7 @@ print s.ndim
     dtype: float64
     The dimensions of the object:
     1
-    
+
 
 ##### size
 
@@ -105,7 +111,7 @@ print s.size
     dtype: float64
     The size of the object:
     2
-    
+
 
 ##### values
 
@@ -116,7 +122,7 @@ import numpy as np
 
 # create a series with 4 random numbers
 s = pd.Series(np.random.randn(4))
-print s 
+print s
 
 print "The actual data series is:"
 print s.values
@@ -129,7 +135,7 @@ print s.values
     dtype: float64
     The actual data series is:
     [-0.80039821 -1.04660011  0.22401843 -0.91926567]
-    
+
 
 ##### Head & Tail
 
@@ -164,7 +170,7 @@ print s.tail(2)
     2    1.757649
     3    0.791180
     dtype: float64
-    
+
 
 ### 2. DataFrame基本函数功能
 | 编号 | 方法 | 描述 |
@@ -207,7 +213,7 @@ print df
     4   30  Steve    3.20
     5   29  Smith    4.60
     6   23   Jack    3.80
-    
+
 
 ##### 转置
 
@@ -232,7 +238,7 @@ print df.T
     Age       25     26     25    23     30     29    23
     Name     Tom  James  Ricky   Vin  Steve  Smith  Jack
     Rating  4.23   3.24   3.98  2.56    3.2    4.6   3.8
-    
+
 
 ##### axes
 
@@ -263,7 +269,7 @@ print df.axes
     5   29  Smith    4.60
     6   23   Jack    3.80
     [RangeIndex(start=0, stop=7, step=1), Index([u'Age', u'Name', u'Rating'], dtype='object')]
-    
+
 
 ##### dtype
 
@@ -288,7 +294,7 @@ print df.dtypes
     Name       object
     Rating    float64
     dtype: object
-    
+
 
 ##### empty
 
@@ -310,7 +316,7 @@ print df.empty
 
     Is the object empty?
     False
-    
+
 
 ##### ndim
 
@@ -343,7 +349,7 @@ print df.ndim
     6   23   Jack    3.80
     The dimension of the object is:
     2
-    
+
 
 ##### shape
 
@@ -376,7 +382,7 @@ print df.shape
     6   23   Jack    3.80
     The shape of the object is:
     (7, 3)
-    
+
 
 ##### size
 
@@ -409,7 +415,7 @@ print df.size
     6   23   Jack    3.80
     The total number of elements in our object is:
     21
-    
+
 
 ##### values
 返回DataFrame中的实际数据作为NDarray
@@ -418,7 +424,7 @@ print df.size
 ```python
 import pandas as pd
 import numpy as np
- 
+
 #Create a Dictionary of series
 d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
    'Age':pd.Series([25,26,25,23,30,29,23]),
@@ -449,7 +455,7 @@ print df.values
      [30L 'Steve' 3.2]
      [29L 'Smith' 4.6]
      [23L 'Jack' 3.8]]
-    
+
 
 ##### Head & Tail
 
@@ -457,7 +463,7 @@ print df.values
 ```python
 import pandas as pd
 import numpy as np
- 
+
 #Create a Dictionary of series
 d = {'Name':pd.Series(['Tom','James','Ricky','Vin','Steve','Smith','Jack']),
    'Age':pd.Series([25,26,25,23,30,29,23]),
@@ -490,7 +496,7 @@ print df.tail(2)
        Age   Name  Rating
     5   29  Smith     4.6
     6   23   Jack     3.8
-    
+
 
 
 ```python
