@@ -3,6 +3,7 @@ layout: post
 title: Pandas学习笔记03
 categories: [blog]
 excerpt: Hello World!
+tags: [free time]
 ---
 
 ## pandas学习笔记03

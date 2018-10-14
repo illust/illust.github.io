@@ -4,14 +4,12 @@ title: About me
 ---
 
 <p class="message">
-  Hey there! My English name is Sven Wong(中文名：汪昊), And I am a graduate student in Beijing University of Technology, I currently main attack Generative Adversarial Nets & Single Image Super Resolution. I love pixel!
+  Hey there! My English name is Sven Wong(中文名：汪昊), and I am a second year graduate student in Beijing University of Technology, I currently main attack Generative Adversarial Nets & Single Image Super Resolution. I love pixel!
 
 </p>
 
-<p>
-If you have some problem, please contact to me with WeChat. My QR code is showed in bellow.
-![QR_Code]({{ site.url }}/assets/qrcode.jpeg)
-</p>
+If you have some problem, please contact to me with WeChat. My QR code is showed in bellow.![QR_Code](/assets/qrcode.jpeg)
+
 
 
 
