@@ -6,6 +6,13 @@ excerpt: 回到写日记的年月里，fight！
 tags: [记录，回顾，展望]
 ---
 ----------------------------
+**2018-11-08**
+今天，晴
+1.    **C++模板：**函数模板，类模板，模板参数，成员模板
+2.    **C/C++知识点：**①[struct和class的区别](http://blog.51cto.com/genwoxuec/503334)：（1）c语言当中的struct和c++当中的class的区别：前者struct只是作为一种复杂数据类型定义，不能定义成员函数，不能用于面向对象编程；（2）C++当中的struct和class区别：对于成员访问权限以及继承方式，class中默认的是private的，而struct中则是public的。class还可以用于表示模板类型，struct则不行。**事实上，C++中保留struct的关键字是为了使C++编译器能够兼容C开发的程序。** ②c语言当中的memset()函数用法，见[这里](http://c.biancheng.net/cpp/html/157.html)；③oj技巧：[C++大数模板](https://blog.csdn.net/yang_7_46/article/details/9897563)
+3.    **"Learning OpenCV 3"**第二单元学习
+
+----------------------------
 **2018-11-07**
 今天立冬，暖阳
 1.    **C++模板**学习了一点点
