@@ -129,9 +129,42 @@ void cv::medianBlur(
 ~~~
 
 ## 3.3 高斯滤波器
+高斯函数具有五个重要的性质，这些性质使得它在早期图像处理中特别有用．这些性质表明，高斯平滑滤波器无论在空间域还是在频率域都是十分有效的低通滤波器，且在实际图像处理中得到了工程人员的有效使用。五个性质列举如下：
+
+- 二维高斯函数具有旋转对称性，即滤波器在各个方向上的平滑程度是相同的；
+- 高斯函数是单值函数；
+- 高斯函数的傅立叶变换频谱是单瓣的；
+- 高斯滤波器宽度(决定着平滑程度)是由参数σ表征的，而且σ和平滑程度的关系是非常简单的；
+- 由于高斯函数的可分离性，较大尺寸的高斯滤波器可以得以有效地实现。
+
+详见[图像滤波之高斯滤波介绍](http://imgtec.eetrend.com/d6-imgtec/blog/2018-04/11426.html)
+
+~~~cpp
+void cv::GaussianBlur(
+  cv::InputArray  src,                             // Input image
+  cv::OutputArray dst,                             // Output image
+  cv::Size        ksize,                           // Kernel size
+  double          sigmaX,                          // Gaussian half-width in x-direction
+  double          sigmaY   = 0.0,                  // Gaussian half-width in y-direction
+  int             borderType = cv::BORDER_DEFAULT  // Border extrapolation to use
+);
+~~~
 
 ## 3.4 双边滤波器
+双边滤波器是一种比较大的图像分析算子，也就是边缘保持平滑。
 
+双边滤波的效果就是将源图像变成一幅水彩画，这种效果在多次迭代后更加明显，因此这种方法在**图像分割**领域十分有用。
+
+
+~~~cpp
+void cv::bilateralFilter(
+  cv::InputArray  src,                             // Input image
+  cv::OutputArray dst,                             // Result image
+  int             d,                               // Pixel neighborhood size (max distance)
+  double          sigmaColor,                      // Width param for color weight function
+  double          sigmaSpace,                      // Width param for spatial weight function
+  int             borderType = cv::BORDER_DEFAULT  // Border extrapolation to use
+~~~
 
 # 4. 导数和梯度
 
