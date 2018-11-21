@@ -225,6 +225,8 @@ figure {
 }
 #side_to_top span:hover{
 }
+
+
 /*右侧边栏*/
 #right_sidebar {
 	top: 0;
@@ -249,7 +251,7 @@ figure {
 	background: linear-gradient(to right,#fff, #f8f8f8);
 }
 #sidebar_switch{
-	padding:20px 0 30px 80px;
+	padding:20px 0 10px 60px;
 }
 #sidebar_switch a{
 	color:#666;
@@ -312,8 +314,8 @@ figure {
 	list-style:none;
 }
 .sidebar_catelog li a{
-	color:#666;
-	font-size:16px;
+	color:#000;
+	font-size:14px;
 	font-weight:100;
 	letter-spacing:1px;
 	font-family:'Microsoft JhengHei';
