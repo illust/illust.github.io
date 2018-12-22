@@ -115,3 +115,16 @@ roots
 
 ## 12. Python中的描述符
 - 参见[Python描述符入门指北](https://manjusaka.itscoder.com/2016/10/12/Something-about-Descriptor/)
+
+## 13. Python2.7.x和python3.x的主要差异  
+- __future__模块
+- print函数
+- 整除
+- Unicode
+- xrange模块
+- 详见[Python 2.7.x 与 Python 3.x 的主要差异](http://chenqx.github.io/2014/11/10/Key-differences-between-Python-2-7-x-and-Python-3-x/)
+
+## 14. Python中的is和"=="
+- is判断地址是否相同，"=="判断值是否相同  
+
+
