@@ -127,4 +127,6 @@ roots
 ## 14. Python中的is和"=="
 - is判断地址是否相同，"=="判断值是否相同  
 
+## 15. Python中的super()用法
+- 参考[调用父类方法](https://python3-cookbook.readthedocs.io/zh_CN/latest/c08/p07_calling_method_on_parent_class.html)
 
