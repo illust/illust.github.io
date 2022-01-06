@@ -12,3 +12,5 @@ tags: [css-layout]
 css名词概念
 - overflow
 - 定位布局
+- flex布局
+- flex:1;
