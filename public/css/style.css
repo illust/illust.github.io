@@ -41,7 +41,7 @@ figure {
 #main header h1 {
 	font-family:  "Josefin Sans",'Lucida Grande', 'Lucida Sans Unicode', "PingFang SC", "Microsoft YaHei", sans-serif;
 	text-align: center;
-	color: #555;
+	color: rgb(0, 0, 0);
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
