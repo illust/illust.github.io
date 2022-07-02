@@ -9,7 +9,7 @@ $cyan:     #75b5aa;
 $blue:     #6a9fb5;
 $magenta:  #aa759f;
 $brown:    #8f5536;
-$default:  #5e5e5e;
+$default:  #1f1e1e;
 
 $white:      #fff;
 $lightgrey:  #eee;
@@ -18,9 +18,9 @@ $black:      #333333;
 $theme-color: $black;
 $theme-color-dark: darken($theme-color, 10%);
 
-$post-date-color: #5e5e5e;
-$title-color: #5e5e5e;
-$masthead-title-small-color: #5e5e5e;
+$post-date-color: #000000;
+$title-color: #0f0d0d;
+$masthead-title-small-color: #030101;
 
 /* Layout */
 $reverse-layout: false;

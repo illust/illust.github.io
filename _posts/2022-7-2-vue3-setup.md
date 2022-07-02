@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vue3中出现的`<script setup>`"
+title: "Vue3中出现的script-setup语法糖"
 categories: [Vue3]
 excerpt: 介绍setup语法糖。
 tags: [vue3]
