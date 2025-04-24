@@ -3,7 +3,7 @@ title: Sven Wong
 tagline: 'Individual Share Space'
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: ''
-url: http://illust.github.io
+url: http://svenwong.tech
 logo: '/public/logo.png'
 
 # Site configurations
@@ -46,7 +46,7 @@ nav:
   About:
     - '/about/'
   Github Project:
-    - 'http://illust.github.io/'
+    - 'https://github.com/illust'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
