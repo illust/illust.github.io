@@ -48,3 +48,6 @@ title: Blog
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+{% if site.disqus_short_name %}
+<script id="dsq-count-scr" src="//{{ site.disqus_short_name }}.disqus.com/count.js" async></script>
+{% endif %}
