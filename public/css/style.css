@@ -315,9 +315,8 @@ figure {
 }
 .sidebar_catelog li a{
 	color:#000;
-	font-size:14px;
+	font-size:16px;
 	font-weight:100;
-	letter-spacing:1px;
 	font-family: "Microsoft YaHei";
 	text-decoration:none;
 }

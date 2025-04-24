@@ -339,7 +339,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: #145e25 //#303030;
 }
 .page-title,
 .post-title {
@@ -370,6 +370,10 @@ tbody tr:nth-child(odd) th {
 .related-posts li small {
   font-size: 75%;
   color: #999;
+}
+
+.related-posts li a {
+  font-size: 22px;
 }
 .related-posts li a:hover {
   color: #268bd2;
